@@ -2,9 +2,9 @@ import express from 'express'
 import { Request, Response } from 'express'
 const router = express.Router();
 
-router.post('/', (req: Request, res: Response) => {
-    console.log('in registerRouter')
-  res.send('in registerRouter')
+router.get('/', (req: Request, res: Response) => {
+    console.log('in threadsRouter')
+  res.send('in threads')
 })
 
 export default router
